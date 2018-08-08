@@ -1,0 +1,28 @@
+/* 织梦58（dede58.com）做最好的织梦整站模板下载网站 */
+#bottomNav {
+	border-top: 1px solid #C0C3C9;
+	text-align: center;
+	z-index: 999;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 60px;
+	line-height: 40px;
+	overflow: visible;
+	color: #FFF;
+	background: #ed2d38;
+}
+table {
+	border-collapse: collapse;
+	font-size: 16px;
+	line-height: 1.25em;
+}
+#bottomNav td {
+	padding: 10px;
+	text-align: center;
+	background: transparent url("../images/zx_bg.jpg") no-repeat scroll right center;
+}
+#bottomNav td a {
+	color: #FFF;
+}

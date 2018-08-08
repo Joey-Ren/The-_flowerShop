@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>鲜花网购物商城织梦dedecms模板(带购物车带手机端)</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1,user-scalable=no,width=device-width,height=device-height" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <link href="./m/style/css/home.css" rel="stylesheet" />
+    <script src="./m/style/js/jquery.js"></script>
+    <script src="./m/style/js/touchslide.1.1.js"></script>
+    <script type="text/javascript" language="javascript" src="./m/style/js/jq.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="menu">
+            <ul>
+                <li>
+                    <a title="网站首页" href="/m">网站首页</a>
+                </li>
+
+                <li>
+                    <a href="list.php?tid=1" title="特价鲜花">特价鲜花</a>
+                </li>
+
+                <li>
+                    <a href="list.php?tid=2" title="鲜花礼盒">鲜花礼盒</a>
+                </li>
+
+                <li>
+                    <a href="list.php?tid=3" title="爱情鲜花">爱情鲜花</a>
+                </li>
+
+                <li>
+                    <a href="list.php?tid=4" title="开业鲜花">开业鲜花</a>
+                </li>
+
+                <li>
+                    <a href="list.php?tid=5" title="绿植鲜花">绿植鲜花</a>
+                </li>
+
+                <li>
+                    <a href="list.php?tid=6" title="创意鲜花">创意鲜花</a>
+                </li>
+
+                <li>
+                    <a href="list.php?tid=12" title="鲜花资讯">鲜花资讯</a>
+                </li>
+
+                <li>
+                    <a href="list.php?tid=7" title="帮助中心">帮助中心</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="boxbg"></div>
+        <div class="headbox clearfix">
+            <img src="./m/style/images/logo.jpg" alt="" />
+            <div class="menuiocn">
+                <a href="#">
+                    <img src="./m/style/images/menuioc.png" alt="" />
+                </a>
+            </div>
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    var flbox = $('.menuiocn');
+                    nav = $('.menu');
+                    box = $('.boxbg');
+                    flbox.click(function() {
+                        box.animate({
+                            right: '50%'
+                        }, '500');
+                        nav.animate({
+                            right: '0px'
+                        }, '500');
+                        $('.menu').css("display", "block");
+                        $('.boxbg').css("display", "block");
+                        return;
+
+                    });
+                    $('.boxbg').click(function() {
+                            box.animate({
+                                right: '0'
+                            }, '500');
+                            nav.animate({
+                                right: '-50%'
+                            }, '500');
+                            $(this).hide();
+                            return;
+
+                        }
+
+                    )
+
+
+                });
+            </script>
+        </div>
+    </div>
+    <div class="main">
+        <div id="focus" class="focus">
+            <div class="hd">
+                <ul>
+                </ul>
+            </div>
+            <div class="bd">
+                <ul>
+
+                    <li>
+                        <a>
+                            <img src="./uploads/allimg/171129/1-1G129143J10-L.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="./uploads/allimg/171129/1-1G129143H60-L.jpg" />
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+        <script type="text/javascript">
+            TouchSlide({
+                slideCell: "#focus",
+                titCell: ".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+                mainCell: ".bd ul",
+                effect: "left",
+                autoPlay: true, //自动播放
+                autoPage: true, //自动分页
+                switchLoad: "_src" //切换加载，真实图片路径为"_src" 
+            });
+        </script>
+    </div>
+    <div class="main">
+        <div class="index_cat">
+            <ul>
+                <li>
+                    <dl>
+                        <a href="list.php?tid=1">
+                            <dt>
+                <span class="icon_1">
+                  <img src="./m/style/images/ico1.png" alt="特价鲜花" width="25" height="26" />
+                </span>
+              </dt>
+                            <dd>
+                                <span class="icon_list">特价鲜花</span>
+                            </dd>
+                        </a>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <a href="list.php?tid=2">
+                            <dt>
+                <span class="icon_2">
+                  <img src="./m/style/images/ico2.png" alt="鲜花礼盒" width="25" height="26" />
+                </span>
+              </dt>
+                            <dd>
+                                <span class="icon_list">鲜花礼盒</span>
+                            </dd>
+                        </a>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <a href="list.php?tid=3">
+                            <dt>
+                <span class="icon_3">
+                  <img src="./m/style/images/ico3.png" alt="爱情鲜花" width="25" height="26" />
+                </span>
+              </dt>
+                            <dd>
+                                <span class="icon_list">爱情鲜花</span>
+                            </dd>
+                        </a>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <a href="list.php?tid=4">
+                            <dt>
+                <span class="icon_4">
+                  <img src="./m/style/images/ico4.png" alt="开业鲜花" width="25" height="26" />
+                </span>
+              </dt>
+                            <dd>
+                                <span class="icon_list">开业鲜花</span>
+                            </dd>
+                        </a>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <a href="list.php?tid=5">
+                            <dt>
+                <span class="icon_5">
+                  <img src="./m/style/images/ico5.png" alt="绿植鲜花" width="25" height="26" />
+                </span>
+              </dt>
+                            <dd>
+                                <span class="icon_list">绿植鲜花</span>
+                            </dd>
+                        </a>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="sxju"></div>
+    </div>
+    <div class="new-ct main">
+        <div class="theme-pavilion">
+            <div class="sr_h4">
+                <h3>特价鲜花</h3>
+            </div>
+            <ul class="activity-list" id="dataList">
+                <li class="activity-item">
+                    <a href="view.php?aid=107" title="爱我所爱云南顶级白色">
+                        <span class="img-box">
+              <img src="./m/style/images/loading.gif" data-original="./uploads/allimg/170726/1-1FH6204209.jpg" class="lazy activity-img"> </span>
+                        <p class="w_h37">爱我所爱云南顶级白色
+                            <span style="color: #ff0000;"></span>
+                        </p>
+                        <font class="price">￥199</font>
+                        <div class="h5"></div>
+                    </a>
+                </li>
+                <li class="activity-item">
+                    <a href="view.php?aid=106" title="如果爱白玫瑰x11枝">
+                        <span class="img-box">
+              <img src="./m/style/images/loading.gif" data-original="./uploads/allimg/170726/1-1FH6204021.jpg" class="lazy activity-img"> </span>
+                        <p class="w_h37">如果爱白玫瑰x11枝
+                            <span style="color: #ff0000;"></span>
+                        </p>
+                        <font class="price">￥199</font>
+                        <div class="h5"></div>
+                    </a>
+                </li>
+                <li class="activity-item">
+                    <a href="view.php?aid=105" title="最浪漫的事18朵">
+                        <span class="img-box">
+              <img src="./m/style/images/loading.gif" data-original="./uploads/allimg/170726/1-1FH6203G7.jpg" class="lazy activity-img"> </span>
+                        <p class="w_h37">最浪漫的事18朵
+                            <span style="color: #ff0000;"></span>
+                        </p>
+                        <font class="price">￥199</font>
+                        <div class="h5"></div>
+                    </a>
+                </li>
+                <li class="activity-item">
+                    <a href="view.php?aid=104" title="厄瓜多尔甜心玫瑰x19朵">
+                        <span class="img-box">
+              <img src="./m/style/images/loading.gif" data-original="./uploads/allimg/171129/1-1G1291026240-L.jpg" class="lazy activity-img"> </span>
+                        <p class="w_h37">厄瓜多尔甜心玫瑰x19朵
+                            <span style="color: #ff0000;"></span>
+                        </p>
+                        <font class="price">￥299</font>
+                        <div class="h5"></div>
+                    </a>
+                </li>
+
+            </ul>
+            <div class="tbl-type"> &nbsp; </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="sxju"></div>
+    </div>
+    <div class="new-ct main">
+        <div class="theme-pavilion">
+            <div class="sr_h4">
+                <h3>鲜花礼盒</h3>
+            </div>
+            <ul class="activity-list" id="dataList">
+                <li class="activity-item">
+                    <a href="view.php?aid=115" title="爱丽丝">
+                        <span class="img-box">
+              <img src="./m/style/images/loading.gif" data-original="./uploads/allimg/170726/1-1FH62125370-L.jpg" class="lazy activity-img"> </span>
+                        <p class="w_h37">爱丽丝
+                            <span style="color:#ff0000;"></span>
+                        </p>
+                        <font class="price">￥198</font>
+                        <div class="h5"></div>
+                    </a>
+                </li>
+                <li class="activity-item">
+                    <a href="view.php?aid=114" title="月吟*粉色玫瑰x19枝">
+                        <span class="img-box">
+              <img src="./m/style/images/loading.gif" data-original="./uploads/allimg/170726/1-1FH6212I20-L.jpg" class="lazy activity-img"> </span>
+                        <p class="w_h37">月吟*粉色玫瑰x19枝
+                            <span style="color:#ff0000;"></span>
+                        </p>
+                        <font class="price">￥99</font>
+                        <div class="h5"></div>
+                    </a>
+                </li>
+                <li class="activity-item">
+                    <a href="view.php?aid=113" title="绚烂多姿*香槟色玫瑰x33 枝">
+                        <span class="img-box">
+              <img src="./m/style/images/loading.gif" data-original="./uploads/170726/1-1FH6212U3460.JPG" class="lazy activity-img"> </span>
+                        <p class="w_h37">绚烂多姿*香槟色玫瑰x33 枝
+                            <span style="color:#ff0000;"></span>
+                        </p>
+                        <font class="price">￥199</font>
+                        <div class="h5"></div>
+                    </a>
+                </li>
+                <li class="activity-item">
+                    <a href="view.php?aid=112" title="情真如初*香槟玫瑰x33枝">
+                        <span class="img-box">
+              <img src="./m/style/images/loading.gif" data-original="./uploads/allimg/170726/1-1FH62129400-L.jpg" class="lazy activity-img"> </span>
+                        <p class="w_h37">情真如初*香槟玫瑰x33枝
+                            <span style="color:#ff0000;"></span>
+                        </p>
+                        <font class="price">￥189</font>
+                        <div class="h5"></div>
+                    </a>
+                </li>
+
+            </ul>
+            <div class="tbl-type"> &nbsp; </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="sxju"></div>
+    </div>
+    <div class="new-ct main">
+        <div class="theme-pavilion">
+            <div class="sr_h4">
+                <h3>爱情鲜花</h3>
+            </div>
+            <ul class="activity-list" id="dataList">
+                <li class="activity-item">
+                    <a href="view.php?aid=120" title="戴安娜粉玫瑰x19枝">
+                        <span class="img-box">
+              <img src="./m/style/images/loading.gif" data-original="./uploads/allimg/170726/1-1FH6203T9.jpg" class="lazy activity-img"> </span>
+                        <p class="w_h37">戴安娜粉玫瑰x19枝
+                            <span style="color: #ff0000;"></span>
+                        </p>
+                        <font class="price">￥289</font>
+                        <div class="h5"></div>
+                    </a>
+                </li>
+                <li class="activity-item">
+                    <a href="view.php?aid=119" title="公仔创意花束-关节熊5只＋胖胖熊9只">
+                        <span class="img-box">
+              <img src="./m/style/images/loading.gif" data-original="./uploads/allimg/170726/1-1FH62114050-L.jpg" class="lazy activity-img"> </span>
+                        <p class="w_h37">公仔创意花束-关节熊5只＋胖胖熊9只
+                            <span style="color: #ff0000;"></span>
+                        </p>
+                        <font class="price">￥199</font>
+                        <div class="h5"></div>
+                    </a>
+                </li>
+                <li class="activity-item">
+                    <a href="view.php?aid=118" title="公仔创意花束-紫色小熊----薰衣草紫色">
+                        <span class="img-box">
+              <img src="./m/style/images/loading.gif" data-original="./uploads/allimg/170726/1-1FH62115270-L.jpg" class="lazy activity-img"> </span>
+                        <p class="w_h37">公仔创意花束-紫色小熊----薰衣草紫色
+                            <span style="color: #ff0000;"></span>
+                        </p>
+                        <font class="price">￥299</font>
+                        <div class="h5"></div>
+                    </a>
+                </li>
+                <li class="activity-item">
+                    <a href="view.php?aid=117" title="品牌metoo梦幻黄布偶娃娃+白色爱心兔">
+                        <span class="img-box">
+              <img src="./m/style/images/loading.gif" data-original="./uploads/allimg/170726/1-1FH6211I80-L.jpg" class="lazy activity-img"> </span>
+                        <p class="w_h37">品牌metoo梦幻黄布偶娃娃+白色爱心兔
+                            <span style="color: #ff0000;"></span>
+                        </p>
+                        <font class="price">￥198</font>
+                        <div class="h5"></div>
+                    </a>
+                </li>
+
+            </ul>
+            <div class="tbl-type"> &nbsp; </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="sxju"></div>
+    </div>
+    <div class="main" style="background: #fff;">
+        <div style="border-bottom: 1px solid #E4E4E4; color: #666; padding: 14px 0px 7px 8px; font-size: 14px;">
+            <h3>鲜花资讯</h3>
+        </div>
+        <div class="sppj_hy">
+            <a href="view.php?aid=98" title="春节、元旦送花小技巧">
+                <div class="detail2">
+                    <p>春节、元旦送花小技巧</p>
+                </div>
+            </a>
+            <a href="view.php?aid=97" title="元旦送花小常识">
+                <div class="detail2">
+                    <p>元旦送花小常识</p>
+                </div>
+            </a>
+            <a href="view.php?aid=96" title="送花的一些小技巧">
+                <div class="detail2">
+                    <p>送花的一些小技巧</p>
+                </div>
+            </a>
+            <a href="view.php?aid=95" title="圣诞节送花须知">
+                <div class="detail2">
+                    <p>圣诞节送花须知</p>
+                </div>
+            </a>
+            <a href="view.php?aid=94" title="国庆节朋友结婚送什么花">
+                <div class="detail2">
+                    <p>国庆节朋友结婚送什么花</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="sxju"></div>
+    </div>
+    <div class="main">
+        <div class="rmxh">
+            <div class="pp_main">
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>
+                <span>
+                  <img src="./m/style/images/pp_1.png" alt="鲜花网10年品牌" height="45" width="45">
+                </span>
+              </dt>
+                            <dd>
+                                <span class="pp_main_list">鲜花网10年品牌</span>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                <span>
+                  <img src="./m/style/images/pp_2.png" alt="订花指定网站" height="45" width="45">
+                </span>
+              </dt>
+                            <dd>
+                                <span class="pp_main_list">订花指定网站</span>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                <span>
+                  <img src="./m/style/images/pp_3.png" alt="网上订花价格保证" height="45" width="45">
+                </span>
+              </dt>
+                            <dd>
+                                <span class="pp_main_list">网上价格保证</span>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                <span>
+                  <img src="./m/style/images/pp_4.png" alt="2小时送达" height="45" width="45">
+                </span>
+              </dt>
+                            <dd>
+                                <span class="pp_main_list">2小时送达</span>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="rmxh">
+            <div class="phone">
+                <div class="phone_main">
+                    <a href="tel:400-999-8899">
+                        <span></span>400-999-8899</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <link href="./m/style/css/kefu.css" rel="stylesheet" />
+    <div class="main">
+        <div class="foot">
+            <a href="/" rel="nofollow">网站首页</a>
+            <a href="list.php?tid=8" rel="nofollow" title="新手指南">新手指南</a>
+            <a href="list.php?tid=9" rel="nofollow" title="支付购买">支付购买</a>
+            <a href="list.php?tid=10" rel="nofollow" title="配送方式">配送方式</a>
+            <a href="list.php?tid=11" rel="nofollow" title="售后服务">售后服务</a>
+        </div>
+    </div>
+    <div class="foot_1">领先的鲜花网品牌，鲜花速递专家！</div>
+    <div class="foot_1">Copyright &copy; 2002-2017 鲜花速递商城 版权所有
+        <a href="http://www.dede58.com" target="_blank">Power by DeDe58</a>
+    </div>
+    <div class="foot_1">粤ICP备65498754号</div>
+    <div class="main h_30"></div>
+    <style type="text/css">
+        #goTopBtn {
+            BOTTOM: 80px;
+            CURSOR: pointer;
+            RIGHT: 15px;
+            _position: absolute;
+            _right: auto;
+            height: 42px;
+            width: 42px;
+            background-color: rgba(237, 45, 56, 0.8);
+            POSITION: fixed;
+            border-radius: 22px;
+        }
+        
+        #goTopBtn span {
+            display: inline-block;
+            width: 30px;
+            height: 32px;
+            background: url("./m/style/images/icon2b.png") -169px 6px no-repeat;
+            background-size: 200px 200px;
+            vertical-align: top;
+            margin-left: 6px;
+        }
+    </style>
+    <div style="display: none" id="goTopBtn">
+        <span></span>
+    </div>
+    <script type="text/javascript">
+        function goTopEx() {
+            var obj = document.getElementById("goTopBtn");
+
+            function getScrollTop() {
+                return document.documentElement.scrollTop + document.body.scrollTop;
+            }
+
+            function setScrollTop(value) {
+                if (document.documentElement.scrollTop) {
+                    document.documentElement.scrollTop = value;
+                } else {
+                    document.body.scrollTop = value;
+                }
+            }
+            window.onscroll = function() {
+                getScrollTop() > window.screen.height ? obj.style.display = "" : obj.style.display = "none";
+            }
+            obj.onclick = function() {
+                var goTop = setInterval(scrollMove, 10);
+
+                function scrollMove() {
+                    setScrollTop(0);
+                    if (getScrollTop() < 1) clearInterval(goTop);
+                }
+            }
+        }
+
+        goTopEx();
+    </script>
+    <script src="./m/style/js/jquery.lazyload.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("img.lazy").lazyload({
+                effect: "fadeIn"
+            });
+        });
+    </script>
+    <div id="bottomNav">
+        <center>
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td width="49%">
+                        <a href="tel:400-999-8899">
+                            <img width="24" height="24" src="./m/style/images/dh1.png">
+                            <br> 电话咨询 </a>
+                    </td>
+                    <td width="49%" style="background:#ed2d38">
+                        <a href="http://wpa.qq.com/msgrd?v=3&uin=88889999&site=qq&menu=yes" target="_blank">
+                            <img width="24" height="24" src="./m/style/images/zx1.png">
+                            <br> 在线客服
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </div>
+
+</body>
+
+</html>
